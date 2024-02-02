@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>E-mail Template</title>
+  </head>
+  <body>
+    <div class="Wrapper">
+        <div class="header">
+            <div class="image">
+                <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/lifeeazy-logo1.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAAaCmFwLXNvdXRoLTEiSDBGAiEAr0dyLA4gRLK2%2FsYnrxVJGDShaDc0e0qYvXcwqikgoZ8CIQCPmHQhwaC9HMaVKm3oUXwAbDDMGHANgI9YIwRJnQG%2BHSr7AggqEAEaDDM4NzY0NzQwNDg3NyIM%2Fh04yyGnMJX%2FWLKXKtgCgN3IaV6v58n3uJzxbkChboq8lMLXgU6bq%2Bq7bX1CLLvdGxOKSYvnXYKbKimKU%2BmNMPCCYx0JJHfBZxyA2r7juNn6nHyVKTLgC3xiLQcy%2Fq2nrkSwxU74QhUaY%2Bjx0v8YUpCJdEH0zejvCiiEigD8%2BO0pcSIzkE8rnFXJ6GNgG1CTGP2o6wvrCeJ2c7UcfM81yluOn55IVvhuU5AkWAOM93m1TaPH9z%2FyF%2FkH7d0SpaiPTwyFmWjSIQLeECOLUSywfdJ5pqLEnQHCXKobfo4K63FkU9yXtUU312%2Fw8Cyo9MAOsC0VhrhYgH%2BXWbaEH7ldhAwhsJcdmGpX5xvR7AbiNa1peXV4I5AEvKKNp3YWWEtimtAc%2BLAGljH%2Feaa5CQzU2%2F%2FwqA2DqPYalC5eM7swzcY7T13EqHY%2BpgUhMepEnTW2aeN7vzyHOSVRctMewpJ8O9JGv%2BOp2sww5LqpjwY6sgJhPzWjFPQ5CxljGKdcHxdDPtZssMqtpLbOv9NVyHkpjEjEiTsIu7mPi8XlMEYH3XYYAvBHYmcQVi2Y56aOoMHbM6pE39MislDzg4U8V%2FE6Xjb1AAL%2F7XkrohdHHC6tFEyxNvvHxTUbeecQksnzU6OfJnPnL6XQEIEZyontYybXMnbnxB5YcNzcY7OEcu9%2B02i5r9G3b1mcMTazsYNTxpyZKAUCyn2apCS6EaRzGn%2FScQvpJ%2BYVdX7SiBg%2Bb6XjqsN%2BG1O5VcziG%2Bw7WVJuWNOcm8E5xz6s3hoKpJVjz5CFym7K9sAy4kbbBUKbQ5zGL0QvuXhFeYGGqSiiDsijyGOiaGRBgKOR49b%2FU0HT3qCsLpHbU46q9VL9JWoBknwVzFu6ewr%2FGN%2FxF890yByex%2Floqq4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220121T082439Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVUQMV7NGVYGLJ6JJ%2F20220121%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=fe75cb4f9a0d755c2000eb4d49690ff3ccdb740edd21461b1c3705b7027402f1">
+                </div>
+        </div>
+       <div class="heading-text mt-5 mb-5">
+        <div class="card" style="width:50%;" >
+            <img class="card-img-top" src="https://vivifyassets.s3.ap-south-1.amazonaws.com/vital_records.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiABkiOh2Ao9C0cxPTWSWeLOxefZ8gy1IoBCoCHOXiMBqQIgCOKGN7J9Uq2%2F7rPLpBl0AYed5xdqz4pPQ6tkU47p3BEqhAMI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwzODc2NDc0MDQ4NzciDK8%2BmQkpdlfGY9BVryrYAgoDMgbqS9B1FjaJueI5zodmwkrmn7YtJbfp%2B21in7M%2BP9FCTsgfoRNHm%2BFT9HFkWzWTw6vW1Lapv9tq307cR77DredEpQLOkSYV7HXguok5ypKGbGMMvMe6cBBA%2B8EomiuEtnexDxJdvd3S%2FMbiRfVEbzmCU%2B4FjdQbizmS6s1kXakb1yfDW%2BZQcCWGVj2Zx2OO1hDyqkkVcrHhKRy61SPAo9wPigoDCgAfoi2Yu38PC%2B1oM7LQ5tssdyDmbkADSXWnTfrt21XMw7zPw7HBJcQLgZa82CLI2mmgAnyA73g%2F1dPuMcxkGwLuGnltgmHux0UrQ3NH0Vu1vlK%2B2ipFdGLtdejvN1vanGSOXVINkPX5i4BeUfuAULadTL2nNPQdNLHBpFaFkVskEU3y4O8phAVKhKpq49ohuRs65LYnigk2bAxlHwd6w5uBLpealMQhjY1JutCJqvd8MMPjo48GOrQCMKHnH32rVjRewToSQDk4WHRSLWO4V5rrs9pEPKJDXwMVazbvQZrmCWsl6e%2BOcPfeRj1bGrqudblVNig8S8BqdB9Bd0et1ugfkMv2A8ib346RrnXom0Opf8YqcogJeI7NonVMRPWJcoQ5zXlswjfsGbj%2FTmX0eRMsFXBhpq3s%2FPasql1iFdRuO58K3go2Lk%2BGIgsi7rr%2BsBhgl31DQIMNaOufauxCZhRdANEi9M%2FdCQeQCit0ruqDJ9XghormauUm7hIVr5MtOgdw6adRXPO2p8z52MAxaTIaR6JlL6n3K4LhueGcFYdzrMJ9x12TzVdfRVyd1k8l7ITKOw5n7RriTgXkMhmjBAXBVMDl9fGOxKhSLjV8g96RvZNgdwl%2BcRur%2BoTu2CdnRsm3udH%2Fl1%2B94l9xk%2Bw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220120T052352Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVUQMV7NGXQEUURAL%2F20220120%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=6d080ee497c83b8736fae9ce264e61d67f27322224c3828f8c79ed471faee6f9" alt="Card image cap" >
+            <div class="card-body"></div>
+            <h3>Dear {{Firstname}} {{Lastname}},</h3>
+           <p>Your (Mobile Number #) one time PIN is is 769305 Lifeeazy and is valid for 10 minutes.</p>
+           <p>Generated at 2019-07-01 08:24:59</p>
+           <p>This is an auto-generated email.  Do not reply to this email.</p>
+        </div>
+       </div>
+      </div>
+
+            <div class="footer">
+                <div class="social-icons">
+                    <ul class="sc-list">
+                        <li><i class="fa fa-facebook-square"></i></li>
+                        <li><i class="fa fa-linkedin-square"></i></li>
+                        <li><i class="fa fa-twitter-square"></i></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <p>2021 © Vivify | Powered by vivify health care pvt LTD. <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/cropped-vivify_login.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAAaCmFwLXNvdXRoLTEiSDBGAiEAr0dyLA4gRLK2%2FsYnrxVJGDShaDc0e0qYvXcwqikgoZ8CIQCPmHQhwaC9HMaVKm3oUXwAbDDMGHANgI9YIwRJnQG%2BHSr7AggqEAEaDDM4NzY0NzQwNDg3NyIM%2Fh04yyGnMJX%2FWLKXKtgCgN3IaV6v58n3uJzxbkChboq8lMLXgU6bq%2Bq7bX1CLLvdGxOKSYvnXYKbKimKU%2BmNMPCCYx0JJHfBZxyA2r7juNn6nHyVKTLgC3xiLQcy%2Fq2nrkSwxU74QhUaY%2Bjx0v8YUpCJdEH0zejvCiiEigD8%2BO0pcSIzkE8rnFXJ6GNgG1CTGP2o6wvrCeJ2c7UcfM81yluOn55IVvhuU5AkWAOM93m1TaPH9z%2FyF%2FkH7d0SpaiPTwyFmWjSIQLeECOLUSywfdJ5pqLEnQHCXKobfo4K63FkU9yXtUU312%2Fw8Cyo9MAOsC0VhrhYgH%2BXWbaEH7ldhAwhsJcdmGpX5xvR7AbiNa1peXV4I5AEvKKNp3YWWEtimtAc%2BLAGljH%2Feaa5CQzU2%2F%2FwqA2DqPYalC5eM7swzcY7T13EqHY%2BpgUhMepEnTW2aeN7vzyHOSVRctMewpJ8O9JGv%2BOp2sww5LqpjwY6sgJhPzWjFPQ5CxljGKdcHxdDPtZssMqtpLbOv9NVyHkpjEjEiTsIu7mPi8XlMEYH3XYYAvBHYmcQVi2Y56aOoMHbM6pE39MislDzg4U8V%2FE6Xjb1AAL%2F7XkrohdHHC6tFEyxNvvHxTUbeecQksnzU6OfJnPnL6XQEIEZyontYybXMnbnxB5YcNzcY7OEcu9%2B02i5r9G3b1mcMTazsYNTxpyZKAUCyn2apCS6EaRzGn%2FScQvpJ%2BYVdX7SiBg%2Bb6XjqsN%2BG1O5VcziG%2Bw7WVJuWNOcm8E5xz6s3hoKpJVjz5CFym7K9sAy4kbbBUKbQ5zGL0QvuXhFeYGGqSiiDsijyGOiaGRBgKOR49b%2FU0HT3qCsLpHbU46q9VL9JWoBknwVzFu6ewr%2FGN%2FxF890yByex%2Floqq4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220121T083005Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVUQMV7NGVYGLJ6JJ%2F20220121%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=7b2376016e1677e9b5d94ca45db4bf985e05dae88a5c4bcbdc568128496564e3" style="width:60px;"> </p>
+
+                    </div>
+            </div>
+
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

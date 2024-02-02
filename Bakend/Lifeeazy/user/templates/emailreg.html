@@ -1,0 +1,76 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel ="stylesheet" href="{% static 'css\style.css' %}">
+
+    <title>E-mail Template</title>
+  </head>
+  <body>
+
+    <div class="Wrapper">
+        <div class="header">
+
+            <div class="image" style="display:flex !important;justify-content: center !important;width:100% !important;background: #fff !important;padding:10px !important; box-shadow: 0 8px 20px -2px rgb(158 152 153 / 50%) !important;  ">
+                <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/lifeeazy-logo1.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiBP1dj5wkJuvIk8BK6osm1CYrxn6thJj6TVwNM0%2F8T42gIgcsJxcKvh%2FyzTf3NWmF7qZga%2FTmgjMxWpMmxh1POM94EqhAMI5v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwzODc2NDc0MDQ4NzciDO71mbDV08QQkS3DZSrYAjQVI920jW%2FG8qVp5HftlsOTkSsI11DAV4lCnKNKsc6x7n4P6W3Lv3EYo2WJ%2BfJXPORI5VJ2AyN6cHnWbixRTS0NCsGHm7qf2WfCT2%2FHc%2F7LQVNPCAFXPcau7yjO95c9Pcctf6ukfC3%2FzDAwoAjpNAqf%2B1YIRhxSGPZPKzMbZ3rWWGijoUErvsN3ABjp2sXYD7qg6jpNCq8iRM52hqLVfeC8GcQquKHmZEfkjbYVpHrMSN42WjQY8HDHvo4aF65kRjCbR%2BDfd9RFTWnFsUEyDvvpw0SiFpWMcZkyj8vFtwNnJbOtRHoFuxu4exZltUpm0YZRlUFKLh64qLCby5D%2FnmjrnY52LNeI5CYZyMQma%2Fkb9wchCXmrNTo27%2BFDhKCr3vocSB0I2iwzCooYlo30noJ3ZDwnGVACidWz%2BKOLKrotLLM8Qk%2Fo9w%2B%2BI8a2U5HjFLmSs511r%2FrqMMmsno8GOrQC9kna8sHWPWH15tsuP9IIdo0EUjgsPwAMzXGKP%2FxYobmf3BcrMx7tepZ%2Blk%2FPjuAOMiiwbMnKn2IBW%2BdVNH3v%2FxWZWYKf879O%2BIkWPA8QhH6shsnijTEzp8Q3PfXJRGZtIV0vT%2BtVPslDFECi4DIvCIOtnIVUxqKCm3wSyIUbK16%2B88fnphp7ULN2STE9PhWZFb1r76zEOtKcPxxXB0HlLci2sA0B%2Ft8YvO1YTqUwgMEbIbu4SiHzTZDjXArYLuz%2B3PSqI3E1e5WTljhyPo7RKTJraAAvdgcbhqReFDXIGaMJ9veI%2B16t8pUo13bsgt7U41Y8b%2BWFVM8jtE6eADZ5kM%2B9ondihtlWqmNiXISkkFk%2BGd6%2BuoMfxDZU0BpQuBSBzx2FyUQhxs0wKShVpJ%2Bsby1%2F0DY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220119T120814Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVUQMV7NGYCJHKZ3W%2F20220119%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=98f97647cbeddb1ee133c3321f69d41fb04b3402698c2d7ab44a16429233a4b2">
+               <!--  <img src="lifeeazy-logo1.png">-->
+                </div>
+        </div>
+       <div class="heading-text mt-5 mb-5">
+        <div class="card" style="text-align: center;
+  display:flex;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px -2px rgb(158 152 153 / 50%);
+   border-radius: 5px;
+   border:0;">
+            <img class="card-img-top" style=" display:flex;
+    margin: 0 auto;
+    width:50%;" src="https://vivifyassets.s3.ap-south-1.amazonaws.com/email.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiBP1dj5wkJuvIk8BK6osm1CYrxn6thJj6TVwNM0%2F8T42gIgcsJxcKvh%2FyzTf3NWmF7qZga%2FTmgjMxWpMmxh1POM94EqhAMI5v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwzODc2NDc0MDQ4NzciDO71mbDV08QQkS3DZSrYAjQVI920jW%2FG8qVp5HftlsOTkSsI11DAV4lCnKNKsc6x7n4P6W3Lv3EYo2WJ%2BfJXPORI5VJ2AyN6cHnWbixRTS0NCsGHm7qf2WfCT2%2FHc%2F7LQVNPCAFXPcau7yjO95c9Pcctf6ukfC3%2FzDAwoAjpNAqf%2B1YIRhxSGPZPKzMbZ3rWWGijoUErvsN3ABjp2sXYD7qg6jpNCq8iRM52hqLVfeC8GcQquKHmZEfkjbYVpHrMSN42WjQY8HDHvo4aF65kRjCbR%2BDfd9RFTWnFsUEyDvvpw0SiFpWMcZkyj8vFtwNnJbOtRHoFuxu4exZltUpm0YZRlUFKLh64qLCby5D%2FnmjrnY52LNeI5CYZyMQma%2Fkb9wchCXmrNTo27%2BFDhKCr3vocSB0I2iwzCooYlo30noJ3ZDwnGVACidWz%2BKOLKrotLLM8Qk%2Fo9w%2B%2BI8a2U5HjFLmSs511r%2FrqMMmsno8GOrQC9kna8sHWPWH15tsuP9IIdo0EUjgsPwAMzXGKP%2FxYobmf3BcrMx7tepZ%2Blk%2FPjuAOMiiwbMnKn2IBW%2BdVNH3v%2FxWZWYKf879O%2BIkWPA8QhH6shsnijTEzp8Q3PfXJRGZtIV0vT%2BtVPslDFECi4DIvCIOtnIVUxqKCm3wSyIUbK16%2B88fnphp7ULN2STE9PhWZFb1r76zEOtKcPxxXB0HlLci2sA0B%2Ft8YvO1YTqUwgMEbIbu4SiHzTZDjXArYLuz%2B3PSqI3E1e5WTljhyPo7RKTJraAAvdgcbhqReFDXIGaMJ9veI%2B16t8pUo13bsgt7U41Y8b%2BWFVM8jtE6eADZ5kM%2B9ondihtlWqmNiXISkkFk%2BGd6%2BuoMfxDZU0BpQuBSBzx2FyUQhxs0wKShVpJ%2Bsby1%2F0DY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220119T050128Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVUQMV7NGYCJHKZ3W%2F20220119%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=66e5f624ddf4c250dfbb0443d57b28013c2b717ead6ecca37ebfa0b2bf7b8fc8" alt="Card image cap" >
+            <div class="card-body"></div>
+            <h3 style=" text-align: left;
+    padding:5px;
+    margin:5px;
+    color: #707070;
+    font-size: 20">Dear {{Firstname}} {{Lastname}},</h3>
+           <p style="color:#707070;
+    font-size: 13px;">Your Mobile Number  one time PIN  is {{otp}} Lifeeazy and is valid for 10 minutes.</p>
+           <p style="color:#707070;
+    font-size: 13px;">Generated at {{created_at}}</p>
+           <p style="color:#707070;
+    font-size: 13px;">This is an auto-generated email.  Do not reply to this email.</p>
+        </div>
+       </div>
+      </div>
+
+            <div class="footer" style="  background: #fff;
+    box-shadow: 0 8px 20px -2px rgb(158 152 153 / 50%);
+    width:100%;">
+                <div class="social-icons">
+                    <ul class="sc-list" style="list-style-type:none;">
+                        <li><i class="fa fa-facebook-square"></i></li>
+                        <li><i class="fa fa-linkedin-square"></i></li>
+                        <li><i class="fa fa-twitter-square"></i></li>
+                    </ul>
+                </div>
+                <div class="image">
+
+                    <p>2021 © Vivify | Powered by vivify health care pvt LTD.<img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/cropped-vivify_login.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiBP1dj5wkJuvIk8BK6osm1CYrxn6thJj6TVwNM0%2F8T42gIgcsJxcKvh%2FyzTf3NWmF7qZga%2FTmgjMxWpMmxh1POM94EqhAMI5v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwzODc2NDc0MDQ4NzciDO71mbDV08QQkS3DZSrYAjQVI920jW%2FG8qVp5HftlsOTkSsI11DAV4lCnKNKsc6x7n4P6W3Lv3EYo2WJ%2BfJXPORI5VJ2AyN6cHnWbixRTS0NCsGHm7qf2WfCT2%2FHc%2F7LQVNPCAFXPcau7yjO95c9Pcctf6ukfC3%2FzDAwoAjpNAqf%2B1YIRhxSGPZPKzMbZ3rWWGijoUErvsN3ABjp2sXYD7qg6jpNCq8iRM52hqLVfeC8GcQquKHmZEfkjbYVpHrMSN42WjQY8HDHvo4aF65kRjCbR%2BDfd9RFTWnFsUEyDvvpw0SiFpWMcZkyj8vFtwNnJbOtRHoFuxu4exZltUpm0YZRlUFKLh64qLCby5D%2FnmjrnY52LNeI5CYZyMQma%2Fkb9wchCXmrNTo27%2BFDhKCr3vocSB0I2iwzCooYlo30noJ3ZDwnGVACidWz%2BKOLKrotLLM8Qk%2Fo9w%2B%2BI8a2U5HjFLmSs511r%2FrqMMmsno8GOrQC9kna8sHWPWH15tsuP9IIdo0EUjgsPwAMzXGKP%2FxYobmf3BcrMx7tepZ%2Blk%2FPjuAOMiiwbMnKn2IBW%2BdVNH3v%2FxWZWYKf879O%2BIkWPA8QhH6shsnijTEzp8Q3PfXJRGZtIV0vT%2BtVPslDFECi4DIvCIOtnIVUxqKCm3wSyIUbK16%2B88fnphp7ULN2STE9PhWZFb1r76zEOtKcPxxXB0HlLci2sA0B%2Ft8YvO1YTqUwgMEbIbu4SiHzTZDjXArYLuz%2B3PSqI3E1e5WTljhyPo7RKTJraAAvdgcbhqReFDXIGaMJ9veI%2B16t8pUo13bsgt7U41Y8b%2BWFVM8jtE6eADZ5kM%2B9ondihtlWqmNiXISkkFk%2BGd6%2BuoMfxDZU0BpQuBSBzx2FyUQhxs0wKShVpJ%2Bsby1%2F0DY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220119T064100Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVUQMV7NGYCJHKZ3W%2F20220119%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=72bc666d9e2d8ad36364e18bd81cd504a4093a58baa2776dd3eaef71462ca8e4" style="width:60px;"> </p>
+
+                    </div>
+            </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /user/:
+    get:
+      operationId: listCustomUserrrs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CustomUser'
+          description: ''
+      tags:
+      - user
+    post:
+      operationId: createCustomUserrr
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CustomUser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/CustomUser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/CustomUser'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomUser'
+          description: ''
+      tags:
+      - user
+  /user/getbyid/{id}:
+    get:
+      operationId: retrieveCustomUserrr
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomUser'
+          description: ''
+      tags:
+      - user
+  /user/login:
+    post:
+      operationId: createLogin
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Login'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Login'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Login'
+          description: ''
+      tags:
+      - user
+  /product/:
+    post:
+      operationId: createProductsModel
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Product'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+          description: ''
+      tags:
+      - product
+components:
+  schemas:
+    CustomUser:
+      type: object
+      properties:
+        first_name:
+          type: string
+          maxLength: 150
+        last_name:
+          type: string
+          maxLength: 150
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+\z
+          maxLength: 150
+        password:
+          type: string
+          writeOnly: true
+          maxLength: 128
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        is_active:
+          type: boolean
+          description: Designates whether this user should be treated as active. Unselect
+            this instead of deleting accounts.
+        is_staff:
+          type: boolean
+          description: Designates whether the user can log into this admin site.
+        mobile:
+          type: string
+          nullable: true
+          maxLength: 15
+        address:
+          type: string
+          nullable: true
+        gender:
+          type: string
+          maxLength: 10
+      required:
+      - username
+      - password
+      - gender
+    Login:
+      type: object
+      properties:
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+\z
+          maxLength: 150
+        password:
+          type: string
+          maxLength: 128
+      required:
+      - username
+      - password
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        itemname:
+          type: string
+          maxLength: 100
+        itemdescription:
+          type: string
+        price:
+          type: integer
+          maximum: 2147483647
+          minimum: -2147483648
+        catogry:
+          type: string
+          maxLength: 20
+        image:
+          type: string
+          format: binary
+        discount:
+          type: integer
+          maximum: 2147483647
+          minimum: -2147483648
+          nullable: true
+        user:
+          type: integer
+      required:
+      - itemname
+      - itemdescription
+      - price
+      - catogry
+      - image
+      - user
